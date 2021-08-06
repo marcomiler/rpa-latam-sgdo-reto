@@ -47,28 +47,28 @@ const Header = () => {
               : "Invitado"}
           </label>
         </div>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="col-md-8 row bck-black p-2 justify-content-center">
+        <div className="collapse navbar-collapse mx-3" id="navbarNav">
+          <div className="col-md-10 row bck-black p-2 justify-content-center">
             <div className="col-md-3 mr-4">
               <p className="text-light links-div p-2 btn-block font-weight-bold">
                 LLama Gratis
               </p>
             </div>
-            <div className="col-md-3 mr-4">
+            <div className="col-md-3 mr-2">
               <p className="btn btn-light text-dark links-div p-2 btn-block">
-                <i className="fa fa-phone" aria-hidden="true"></i> 01 311 5100
+                <i className="fa fa-phone" ></i> 01 311 5100
               </p>
             </div>
-            <div className="col-md-3 mr-4">
-              <p className="btn btn-warning links-div p-2 btn-block text-dark">
-                <i className="fa fa-mobile" aria-hidden="true"></i> Te Llamamos
+            <div className="col-md-4 mr-4">
+              <p className="btn btn-warning links-div p-2  text-dark">
+                <i className="fa fa-mobile"></i> Te Llamamos
               </p>
             </div>
           </div>
-          <ul className="navbar-nav ml-auto text-center col-md-2">
+          <ul className="navbar-nav ml-3 text-center col-md-4">
             <button
               type="button"
-              className="btn btn-dark cerrar-sesion links text-capitalize p-2 btn-block"
+              className="btn btn-dark cerrar-sesion links text-capitalize p-2 "
               onClick={iniciarCerrarSesion}>
               {usuarioObtenido
                 ? `${usuarioObtenido.firstName} ${usuarioObtenido.lastName}`
