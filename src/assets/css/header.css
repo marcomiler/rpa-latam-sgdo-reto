@@ -1,0 +1,33 @@
+.link-padre {
+  color: #fff;
+  font-family: Libre Franklin, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  margin: 0px 5px;
+}
+
+.links {
+  color: #fff;
+  font-family: Libre Franklin, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  margin: 0px 12px;
+  text-decoration: none;
+}
+
+.header-logo {
+  padding: 8px 0px;
+  width: 150px;
+  height: auto;
+}
+
+.links-div {
+  font-family: Libre Franklin, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 17px;
+  margin: 0px 12px;
+  text-decoration: none;
+}

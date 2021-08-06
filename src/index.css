@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.form-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.border-form {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f3f3f5e8;
+  box-shadow: 0px 5px 10px rgb(3 182 253 / 50%);
+}
+
+.titulo-form {
+  border-bottom: 1px #282c34 solid;
+}
+
+.bck-gray {
+  background-color: #282c34;
+}
+
+.bck-black {
+  background-color: #000000;
+}
+
+.bck-cielo {
+  background-color: #f4fbff;
+}
+
+.bck-yellow {
+  background-color: #fecd2a;
+  box-shadow: 0 3px 9px -2px rgb(0 0 0 / 55%);
+}

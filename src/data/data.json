@@ -1,0 +1,75 @@
+{
+    "subscription": [
+      {
+        "tipo": "Plan Digital",
+        "precio": "5.00",
+        "duracion": "3 meses",
+        "despues":20,
+        "imagen":"https://cdna.elcomercio.pe/resources/dist/elcomercio/images/landing/plan_one.webp",
+        "beneficios": ["Acceso a contenido premium y navegación ilimitada a elcomercio.pe",
+        "Descuentos especiales del Club de beneficios."],
+        "id": 1,
+        "paquetes": [
+          {
+            "plan": "Plan Mensual",
+            "precio": "5.00"
+          },
+          {
+            "plan": "Plan Semestral",
+            "precio": "75.00"
+          },
+          {
+            "plan": "Plan Anual",
+            "precio": "125.00"
+          }
+        ]
+      },
+      {
+        "tipo": "Digital + Impreso (3 días)",
+        "precio": "35.00",
+        "duracion": "1 mes",
+        "despues":45,
+        "imagen":"https://cdna.elcomercio.pe/resources/dist/elcomercio/images/landing/plan_two.webp",
+        "beneficios": ["Acceso total al Club de beneficios.",
+            "Descuentos especiales del Club de beneficios.",
+            "Diario impreso 3 días a la semana (Vie, Sab y Dom), solo Lima y Callao.",
+            "Versión digital del diario impreso."],
+        "id": 2,
+        "paquetes": [
+          {
+            "plan": "Plan Mensual",
+            "precio": "35.00"
+          },
+          {
+            "plan": "Plan Anual",
+            "precio": "459.00"
+          }
+        ]
+      },
+      {
+        "tipo": "Digital + Impreso 7 días",
+        "precio": "65.00",
+        "duracion": "",
+        "imagen":"https://cdna.elcomercio.pe/resources/dist/elcomercio/images/landing/plan_three.webp",
+        "beneficios": ["Acceso a contenido premium y navegación ilimitada a elcomercio.pe",
+          "Acceso total al Club de beneficios",
+          "Diario impreso 7 días a la semana (Lun a Dom), solo Lima y Callao.",
+          "Versión digital del diario impreso."],
+        "id": 3,
+        "paquetes": [
+          {
+            "plan": "Plan Mensual",
+            "precio": "65.00"
+          },
+          {
+            "plan": "Plan Semestral",
+            "precio": "387.00"
+          },
+          {
+            "plan": "Plan Anual",
+            "precio": "773.00"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,34 @@
+{
+    "distritos": {
+        "Lima": [
+            "Lima",
+            "Ancon",
+            "Ate",
+            "Barranco",
+            "Breña",
+            "Carabayllo",
+            "Cieneguilla",
+            "El Agustino",
+            "Independencia",
+            "La Victoria",
+            "La Molina",
+            "Los Olivos",
+            "Lurigancho",
+            "Lurin",
+            "San Martin de Porres",
+            "Santa Rosa",
+            "Surquillo",            
+            "Villa el Salvador",
+            "Villa María del Triunfo"
+        ],
+        "Prov. Const. del Callao" : [
+            "Callao",
+            "Bellavista",
+            "La Perla",
+            "La Punta",
+            "Ventanilla",
+            "Mi Perú"
+        ]
+    }
+}
+

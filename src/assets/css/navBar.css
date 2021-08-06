@@ -1,0 +1,31 @@
+.link-padre {
+  color: #fff;
+  font-family: Libre Franklin, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  margin: 0px 5px;
+}
+
+.links {
+  color: #fff;
+  font-family: Libre Franklin, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  margin: 0px 12px;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #fff;
+}
+
+.lupa {
+  width: 20px;
+}
+
+.buscador,
+.cerrar-sesion {
+  font-family: Libre Franklin, sans-serif;
+}

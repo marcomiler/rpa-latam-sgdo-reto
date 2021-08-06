@@ -1,0 +1,43 @@
+.plan:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.7s linear;
+}
+
+.plan {
+  height: 570px;
+  width: auto;
+}
+
+.plan-body {
+  padding: 2rem 0 !important;
+}
+
+.plan-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+.overflow {
+  overflow: hidden;
+  height: "250px";
+  text-align: center;
+}
+
+.plan-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.plan-img-top:hover {
+  transform: scale(1.8);
+}
+
+.plan-img {
+  width: auto;
+  height: auto;
+}
+
+.plan-parrafos {
+  height: 100px;
+}
+
