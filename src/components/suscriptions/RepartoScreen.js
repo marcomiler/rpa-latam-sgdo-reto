@@ -10,7 +10,6 @@ import { validationReparto } from '../../helpers/validations/validationReparto';
 import { getDetails } from '../../helpers/getDetails';
 
 let styles = {
-  fontWeight: "500",
   color: "#dc3545"
 }
 
@@ -104,6 +103,7 @@ export default function ReviewScreen( {handleBack, handleNext} ) {
               id="address"
               name="address"
               type="text"
+              placeholder="Ejemplo: San Miguel 1546. Calle..."
               className="form-control"
               autoComplete="off"
               value={ address }
@@ -120,6 +120,7 @@ export default function ReviewScreen( {handleBack, handleNext} ) {
               id="reference"
               name="reference"
               type="text"
+              placeholder="Escribe aquí referencias de avenidas"
               value={ reference }
               className="form-control"
               onChange={ handleInputChange }
@@ -143,12 +144,8 @@ export default function ReviewScreen( {handleBack, handleNext} ) {
             </select>
           </Grid>
           <div className="m-2" style={{display: 'flex', justifyContent:'flex-end'}}>
-                <button className="btn btn-secondary mr-1" onClick={handleBack}>
-                    Volver
-                </button>
-                <button type="submit" className="btn btn-success " onClick={handleBlur}>
-                      Continuar
-                </button>
+                <button className="btn btn-secondary mr-1" onClick={handleBack}>Volver</button>
+                <button type="submit" className="btn btn-success " onClick={handleBlur}>Continuar</button>
             </div>
         </form>
         

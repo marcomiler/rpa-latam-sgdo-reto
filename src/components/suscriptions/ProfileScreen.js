@@ -3,11 +3,11 @@ import { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 import { useValidateForm } from '../../hooks/useValidateForm';
 import { validationProfile } from '../../helpers/validations/validationProfile';
 
 let styles = {
-  fontWeight: "500",
   color: "#dc3545"
 }
 
@@ -101,6 +101,7 @@ const ProfileScreen = ({handleNext}) => {
                   id="dni"
                   name="dni"
                   type="text"
+                  placeholder="Escriba el numero de documento"
                   className="form-control"
                   autoComplete="off"
                   maxLength="7"
@@ -116,6 +117,7 @@ const ProfileScreen = ({handleNext}) => {
                   id="name"
                   name="name"
                   type="text"
+                  placeholder="Escriba su nombre completo"
                   className="form-control"
                   value={ name }
                   autoComplete="off"
@@ -131,6 +133,7 @@ const ProfileScreen = ({handleNext}) => {
                     id="lastname1"
                     name="lastname1"  
                     type="text"
+                    placeholder="Escriba su apellido paterno"
                     className="form-control"
                     value={ lastname1 }
                     autoComplete="off"
@@ -145,6 +148,7 @@ const ProfileScreen = ({handleNext}) => {
                     id="lastname2"
                     name="lastname2" 
                     type="text"
+                    placeholder="Escriba su apellido materno"
                     className="form-control"
                     autoComplete="off"
                     value={ lastname2 }
@@ -160,6 +164,7 @@ const ProfileScreen = ({handleNext}) => {
                   id="phone"
                   name="phone"
                   type="text"
+                  placeholder="Escriba su teléfono"
                   className="form-control"
                   autoComplete="off"
                   value={ phone }
@@ -175,6 +180,7 @@ const ProfileScreen = ({handleNext}) => {
                   type="text"
                   id="email"
                   name="email"
+                  placeholder="Escriba su correo electrónico"
                   className="form-control"
                   label="Correo electrónico"
                   autoComplete="off"

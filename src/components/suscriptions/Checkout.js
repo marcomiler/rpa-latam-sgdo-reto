@@ -1,54 +1,17 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import React, { useState } from 'react';
+import Step from '@material-ui/core/Step';
 import Paper from '@material-ui/core/Paper';
 import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
+
+import Header from '../ui/Header';
 import PaymentScreen from './PaymentScreen';
 import RepartoScreen from './RepartoScreen';
 import ProfileScreen from './ProfileScreen'    
-import { useState } from 'react';
-import Header from '../ui/Header';
+import ConfirmationScreen from './ConfirmationScreen';
+import { useStyles } from './makeStyles';
 
-const useStyles = makeStyles((theme) => ({
-  appBar: {
-    position: 'relative',
-  },
-  layout: {
-    width: 'auto',
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
-      width: 600,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
-  },
-  paper: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
-    padding: theme.spacing(2),
-    [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
-      marginTop: theme.spacing(6),
-      marginBottom: theme.spacing(6),
-      padding: theme.spacing(3),
-    },
-  },
-  stepper: {
-    padding: theme.spacing(3, 0, 5),
-  },
-  buttons: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-  },
-  button: {
-    marginTop: theme.spacing(3),
-    marginLeft: theme.spacing(1),
-  },
-}));
-
-const steps = ['Perfil', 'Reparto', 'Datos de Pago'];
+const steps = ['Perfil', 'Reparto', 'Datos de Pago', 'Confirmación'];
 
 export default function Checkout() {
   
@@ -59,7 +22,9 @@ export default function Checkout() {
         case 1:
         return <RepartoScreen handleBack={ handleBack } handleNext={handleNext}/>;
         case 2:
-          return <PaymentScreen handleBack={ handleBack }/>;
+          return <PaymentScreen handleBack={ handleBack } handleNext={handleNext}/>;
+        case 3:
+          return <ConfirmationScreen/>;
       default:
         throw new Error('Unknown step');
     }
@@ -69,7 +34,6 @@ export default function Checkout() {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
-    //controllar el click del boton next
     setActiveStep(activeStep + 1);
   };
 
@@ -80,7 +44,6 @@ export default function Checkout() {
   return (
     <>
       <Header />
-      <CssBaseline />
       <main className={classes.layout}>
         <Paper className={classes.paper}>
           <Stepper activeStep={activeStep} className={classes.stepper}>
@@ -91,37 +54,7 @@ export default function Checkout() {
             ))}
           </Stepper>
           <>
-          {/* Realizar aquí la pantalla final */}
-            {/* {activeStep === steps.length ? (
-              <>
-                <Typography variant="h5" gutterBottom>
-                  Thank you for your order.
-                </Typography>
-                <Typography variant="subtitle1">
-                  Your order number is #2001539. We have emailed your order confirmation, and will
-                  send you an update when your order has shipped.
-                </Typography>
-              </>
-            ) : ( */}
-              <>
-                {getStepContent(activeStep)}
-                {/* <div className={classes.buttons}>
-                  {activeStep !== 0 && (
-                    <Button onClick={handleBack} className={classes.button}>
-                      Back
-                    </Button>
-                  )}
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className={classes.button}
-                  >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
-                  </Button>
-                </div> */}
-              </>
-            {/* )} */}
+            {getStepContent(activeStep)}
           </>
         </Paper>
       </main>
