@@ -1,4 +1,4 @@
-import { USER_SUSCRIBED } from "../types";
+import { USER_SUSCRIBED } from "../types/types";
 
 
 const initialValues = {

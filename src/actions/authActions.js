@@ -8,7 +8,7 @@ import {
   CERRAR_SESION,
   LOGUEANDO_USUARIO,
   REGISTRANDO_USUARIO,
-} from "../types";
+} from "../types/types";
 
 // Cuando el usuario inicia sesión
 export const iniciarSesionAction = (datos) => {

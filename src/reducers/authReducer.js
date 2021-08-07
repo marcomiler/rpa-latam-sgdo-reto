@@ -7,7 +7,7 @@ import {
   LOGIN_EXITOSO,
   LOGIN_ERROR,
   CERRAR_SESION,
-} from "../types";
+} from "../types/types";
 
 // Cada reducer tiene su state
 const initialState = {

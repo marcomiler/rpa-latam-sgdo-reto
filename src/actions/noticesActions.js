@@ -4,7 +4,7 @@ import {
   DESCARGA_NOTICIAS_ERROR,
   DESCARGA_NOTICIAS_EXITO,
   COMENZAR_DESCARGA_NOTICIAS,
-} from "../types";
+} from "../types/types";
 
 const API_KEY = "17ff168396b945ee856a59be8e69f367";
 let fbusqueda = "";

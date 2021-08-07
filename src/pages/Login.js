@@ -1,9 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 import { iniciarSesionAction } from "../actions/authActions";
+
+// validaciones
+import useValidacion from "../hooks/useValidacion";
+import validarIniciarSesion from "../helpers/validations/validationLogin";
+
+let styles = {
+  fontWeight: "300",
+  color: "#dc3545",
+  fontSize: "10pt",
+};
+const STATE_INICIAL = {
+  email: "",
+  password: "",
+};
 
 function Login() {
   const history = useHistory();
@@ -26,22 +40,15 @@ function Login() {
   // mandar a llamar el action de productoAction
   const ingresarLogin = (datos) => dispatch(iniciarSesionAction(datos));
 
-  const [datos, guardarDatos] = useState({
-    email: "",
-    password: "",
-  });
+  // VALIDACION DEL FORMULARIO
+  const { valores, errores, handleSubmit, handleChange, handleBlur } =
+    useValidacion(STATE_INICIAL, validarIniciarSesion, iniciarSesion);
 
-  const handleInput = (e) => {
-    guardarDatos({
-      ...datos,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const { email, password } = valores;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    ingresarLogin(datos);
-  };
+  function iniciarSesion() {
+    ingresarLogin(valores);
+  }
 
   return (
     <>
@@ -50,7 +57,7 @@ function Login() {
           <Link className="btn btn-dark btn-block" to={"/"}>
             Volver a la página principal
           </Link>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} noValidate>
             <div className="form-group">
               <div className="titulo-form">
                 <h3>Login</h3>
@@ -64,9 +71,12 @@ function Login() {
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
                 title="ejemplo@ej.com"
                 required
-                onChange={handleInput}
+                value={email}
+                onChange={handleChange}
               />
+              {errores.email && <p style={styles}>{errores.email}</p>}
             </div>
+
             <div className="form-group">
               <input
                 className="form-control"
@@ -78,9 +88,12 @@ function Login() {
                 pattern="[A-Za-z0-9@_. ]{8,15}"
                 title="ejm: ejemplo@ej123"
                 required
-                onChange={handleInput}
+                value={password}
+                onChange={handleChange}
               />
+              {errores.password && <p style={styles}>{errores.password}</p>}
             </div>
+
             <div className="form-group">
               <input
                 type="submit"

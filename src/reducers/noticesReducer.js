@@ -2,7 +2,7 @@ import {
   COMENZAR_DESCARGA_NOTICIAS,
   DESCARGA_NOTICIAS_EXITO,
   DESCARGA_NOTICIAS_ERROR,
-} from "../types";
+} from "../types/types";
 
 // Cada reducer tiene su propio state
 
