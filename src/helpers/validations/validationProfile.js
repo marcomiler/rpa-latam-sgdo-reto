@@ -10,8 +10,8 @@ export const validationProfile = (formValues) => {
         errors.dni = "Campo requerido";
     }else if ( !isNumeric(formValues.dni) ){
         errors.dni = "Solo dígitos";
-    } else if (formValues.dni.length > 7 || formValues.dni.length !== 7) {
-        errors.dni = "Solo 7 dígitos";
+    } else if (formValues.dni.length > 8 || formValues.dni.length !== 8) {
+        errors.dni = "Solo 8 dígitos";
     }
 
     if(!formValues.name.trim()){

@@ -1,8 +1,15 @@
 import { USER_SUSCRIBED } from "../types"
 
 export const suscribedAction = () => {
+
     return ( dispatch ) => {
-        dispatch(suscribedReducer());
+        const data = localStorage.getItem('isSuscribed');
+        const isSuscribed = JSON.parse(data);
+        
+        if(isSuscribed){
+            dispatch(suscribedReducer());
+        }
+        console.log(isSuscribed)
     }
 }
 

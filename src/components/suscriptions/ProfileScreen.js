@@ -104,7 +104,7 @@ const ProfileScreen = ({handleNext}) => {
                   placeholder="Escriba el numero de documento"
                   className="form-control"
                   autoComplete="off"
-                  maxLength="7"
+                  maxLength="8"
                   value={ dni }
                   onChange={handleInputChange}
                 />

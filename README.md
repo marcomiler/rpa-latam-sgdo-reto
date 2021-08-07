@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# NOTICIAS REVIEW REACT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Contenido
+- Resumen
+- Objetivos
+- Herramientas
+- Librerías y dependencias
+- Mejora continua
+- Conclusiones
+----
 
-## Available Scripts
+##Resumen
+El proyecto va dirigido para el público en general que desee suscribirse a los planes ofrecidos por la empresa patrocinadora, ofreciéndolas en la web.
 
-In the project directory, you can run:
+## Objetivos
+- Simular el proceso de suscripción incluyendo método de pago.
+- Optimizar el código para una estructura más robusta.
+- Hacer uso de Redux.
 
-### `yarn start`
+## Herramientas
+- *Visual Studio Code*: Usado como editor de texto durante todo el desarrollo del proyecto.
+- *Google Meet*: Necesaria para las las reuniones del equipo.
+- *Git - Github*: Una usada para controlar las versiones del proyecto, mientras que otra fue usada como repositorio.
+- *NPM*: Como gestor de dependencias.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Librerías y dependencias
+1. *Redux*: Usado como patrón de arquitectura para la separación de los componentes y sus flujos.
+2. *Boostrap - MaterialUI - SweetAlert2*: Gracias a estas librerías nos facilitamos el trabajo de los estilos de los componentes y los mensajes.
+3. *React Router Dom*: El ruteo no pudo haber sido realizado sino hacíamos uso de esta dependencia, fue esencial.
+4. *Jest-DOM*: Dependencia para pruebas unitarias. (instalado, pero no usado).
+5. *Axios*: Librería utilizada para facilitar el consumo de las apis.
+6. *Validator*: Usado para las validaciones de los formularios.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###End

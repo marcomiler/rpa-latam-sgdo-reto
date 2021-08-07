@@ -10,6 +10,7 @@ let styles = {
 }
 
 const PaymentScreen = ({handleBack, handleNext}) => {
+
   
   const storage = localStorage.getItem('suscription');
   const dataPayment = localStorage.getItem('payment');
@@ -51,7 +52,6 @@ const PaymentScreen = ({handleBack, handleNext}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formValues);
     localStorage.setItem('payment', JSON.stringify(formValues));
     if(Object.keys(errorForm).length === 0){
       handleNext();

@@ -10,12 +10,17 @@ import {
 } from "../../actions/authActions";
 
 import { obtenerNoticiasAction } from "../../actions/noticesActions";
+import { suscribedAction } from "../../actions/suscribedAction";
 
 export default function NavBar() {
   // utilizar useDispatch
   const dispatch = useDispatch();
 
-  const idiomaObtenido = useSelector((state) => state.noticias.language);
+  const idiomaObtenido = useSelector( (state) => state.noticias.language );
+
+  dispatch(suscribedAction());
+  const suscribed = useSelector( (state) => state.suscribed.status );
+
 
   // usuario obtenido del reducer
   const usuarioObtenido = useSelector((state) => state.autenticacion.usuario);
@@ -168,7 +173,7 @@ export default function NavBar() {
                 <label className="btn-dark cerrar-sesion links">Invitado</label>
               )}
             </li>
-            {usuarioObtenido ? (
+            {usuarioObtenido && !suscribed ? (
               <li className="nav-item">
                 <Link
                   className="btn btn-light text-dark links text-uppercase"
